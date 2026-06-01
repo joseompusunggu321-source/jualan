@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aksesoris Lucu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Fredoka',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6ec,#d7ecff,#f5d7ff);
+overflow-x:hidden;
+}
+
+header{
+background:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 20px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#ff4fa3;
+}
+
+.logo span{
+color:#7b68ff;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:#444;
+font-weight:600;
+}
+
+.hero{
+padding:70px 8%;
+text-align:center;
+position:relative;
+}
+
+.hero h1{
+font-size:90px;
+color:#ff4fa3;
+text-shadow:4px 4px 0 white;
+}
+
+.hero h2{
+font-size:40px;
+color:#7b68ff;
+margin-top:-10px;
+}
+
+.hero p{
+font-size:22px;
+margin-top:15px;
+color:#555;
+}
+
+.star{
+position:absolute;
+font-size:40px;
+animation:float 3s infinite ease-in-out;
+}
+
+.star1{
+left:10%;
+top:20%;
+}
+
+.star2{
+right:10%;
+top:15%;
+}
+
+@keyframes float{
+50%{
+transform:translateY(-15px);
+}
+}
+
+.products{
+padding:50px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:45px;
+color:#ff4fa3;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:30px;
+padding:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.card h3{
+margin-top:15px;
+color:#ff4fa3;
+font-size:26px;
+}
+
+.price{
+font-size:28px;
+font-weight:bold;
+color:#ff5722;
+margin:10px 0;
+}
+
+.desc{
+color:#666;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:12px 25px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.features{
+padding:70px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:25px;
+text-align:center;
+}
+
+.feature h3{
+color:#ff4fa3;
+margin-bottom:10px;
+}
+
+.contact{
+margin:60px 8%;
+background:linear-gradient(135deg,#ff4fa3,#7b68ff);
+padding:40px;
+border-radius:35px;
+color:white;
+text-align:center;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.contact p{
+font-size:30px;
+font-weight:bold;
+}
+
+footer{
+padding:25px;
+text-align:center;
+background:white;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:60px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">AKSESORIS <span>LUCU</span></div>
+
+<nav>
+<a href="#">Beranda</a>
+<a href="#">Produk</a>
+<a href="#">Tentang</a>
+<a href="#">Kontak</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="star star1">⭐</div>
+<div class="star star2">💖</div>
+
+<h1>AKSESORIS</h1>
+<h2>LUCU</h2>
+
+<p>
+Lengkapi gaya dan tampil lebih gemas setiap hari!
+</p>
+
+</section>
+
+<section class="products">
+
+<h2 class="section-title">
+Produk Terlaris
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300?text=Pulpen+Pink">
+<h3>Pulpen Cetek Warna Pink</h3>
+<div class="price">Rp 2.000 / 1 PCS</div>
+<p class="desc">
+Tinta halus, nyaman dipakai sehari-hari.
+</p>
+
+<a class="btn"
+href="https://wa.me/6289676507528">
+Pesan via WhatsApp
+</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300?text=Pulpen+Hitam">
+<h3>Pulpen Cetek Warna Hitam</h3>
+<div class="price">Rp 2.000 / 1 PCS</div>
+<p class="desc">
+Tinta halus, nyaman dipakai sehari-hari.
+</p>
+
+<a class="btn"
+href="https://wa.me/6289676507528">
+Pesan via WhatsApp
+</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300?text=Jepit+Bintang">
+<h3>Jepit Rambut Bintang</h3>
+<div class="price">Rp 2.000 / 1 PCS</div>
+<p class="desc">
+Lucu, trendy, bikin gaya makin on point.
+</p>
+
+<a class="btn"
+href="https://wa.me/6289676507528">
+Pesan via WhatsApp
+</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300?text=Bintang+Bulu">
+<h3>Jepit Rambut Bintang Bulu</h3>
+<div class="price">Rp 2.000 / 1 PCS</div>
+<p class="desc">
+Lembut, menggemaskan dan bikin penampilan makin manis.
+</p>
+
+<a class="btn"
+href="https://wa.me/6289676507528">
+Pesan via WhatsApp
+</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300?text=Karet+Rambut">
+<h3>Karet Rambut Warna-Warni</h3>
+<div class="price">Rp 2.000 / 1 PCS</div>
+<p class="desc">
+Warna ceria, elastis dan kuat.
+</p>
+
+<a class="btn"
+href="https://wa.me/6289676507528">
+Pesan via WhatsApp
+</a>
+</div>
+
+</div>
+</section>
+
+<section class="features">
+
+<div class="feature">
+<h3>💖 Desain Lucu</h3>
+<p>Tampil lebih ceria setiap hari.</p>
+</div>
+
+<div class="feature">
+<h3>⭐ Warna Menarik</h3>
+<p>Pastel dan warna favorit anak muda.</p>
+</div>
+
+<div class="feature">
+<h3>🎁 Cocok Untuk Hadiah</h3>
+<p>Kado kecil yang berkesan.</p>
+</div>
+
+<div class="feature">
+<h3>✨ Harga Murah</h3>
+<p>Mulai Rp 2.000 saja.</p>
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>ORDER SEKARANG</h2>
+
+<p>📱 +62 896-7650-7528</p>
+
+<br>
+
+<a class="btn"
+style="font-size:20px"
+href="https://wa.me/6289676507528">
+Chat WhatsApp
+</a>
+
+</section>
+
+<footer>
+© 2025 AKSESORIS LUCU - All Rights Reserved
+</footer>
+
+</body>
+</html>
